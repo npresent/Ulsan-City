@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - fac
+  - tra
+  - nucl
+  - house
+  - soil
+  - hos
+  - nuctra
+  - hostra
+  - facsoil
+  - covid
   layers:
   - Default
   - TransparentFX

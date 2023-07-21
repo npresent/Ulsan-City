@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MouseMove : MonoBehaviour
 {
-    public float sesitivity = 50f;
+    public float sesitivity;
     // 마우스 민감도
-    public float rotationX;
+    public float rotationX = -390f;
     // X축의 위치
     public float rotationY;
     // Y축의 위치
@@ -26,7 +26,19 @@ public class MouseMove : MonoBehaviour
         rotationY += mouseMoveX * sesitivity * Time.deltaTime;
         // rotationY 변수의 값은 rotationY + (mouseMoveX * 마우스 민감도 * Time.deltaTime)
 
-        rotationX += mouseMoveY * sesitivity * Time.deltaTime;
+
+        if(rotationX > -330f)
+        {
+            rotationX = -330f;
+        }
+        else if (rotationX < -390f)
+        {
+            rotationX = -390f;
+        }
+        else
+        {
+            rotationX += mouseMoveY * sesitivity * Time.deltaTime;
+        }
         // rotationX 변수의 값은 rotationX + (mouseMoveY * 마우스 민감도 * Time.deltaTime) 
 
         /*
