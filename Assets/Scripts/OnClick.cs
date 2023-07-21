@@ -26,6 +26,11 @@ public class OnClick : MonoBehaviour
 
     public MeshRenderer covidPic;
 
+    public MeshRenderer farmPic;
+    public TextMesh farmText;
+    public GameObject farm;
+    public GameObject smartFarm;
+
     public Texture[] PicMat;
 
     // 레이케스트가 건드린(?) 것을 취득해서 넣어두는곳
@@ -78,6 +83,13 @@ public class OnClick : MonoBehaviour
                 if (objTag =="covid")
                 {
                     covidPic.material.mainTexture = PicMat[6];
+                }
+                if (objTag == "farm")
+                {
+                    farmPic.material.mainTexture = PicMat[7];
+                    farmText.text = "스마트팜(식물 자동 관리)";
+                    farm.SetActive(false);
+                    smartFarm.SetActive(true);
                 }
             }
         }
