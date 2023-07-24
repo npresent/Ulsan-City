@@ -6063,7 +6063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16475e1f48c3494a99540176f018d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sesitivity: 20
+  sesitivity: 40
   rotationX: 0
   rotationY: 0
 --- !u!114 &1982162781
